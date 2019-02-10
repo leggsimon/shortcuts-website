@@ -124,5 +124,6 @@
 	background-color: #389d10;
 	padding: 8px;
 	transform: scale(0.6);
+	-webkit-clip-path: circle(23px at center);
 	clip-path: circle(23px at center);
 }
