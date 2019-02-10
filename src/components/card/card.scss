@@ -1,0 +1,128 @@
+:root {
+	--dark-red: #c31b25;
+	--light-red: #fc2e49;
+	--dark-green: #389d10;
+	--light-green: #61ca41;
+	--dark-pink: #cf297e;
+	--light-pink: #f46aad;
+	--dark-purple: #8208ab;
+	--light-purple: #b54cda;
+	--dark-yellow: #e68400;
+	--light-yellow: #f0b701;
+	--dark-blue: #0078e0;
+	--light-blue: #4ea9f0;
+}
+
+.card {
+	// padding-top: 18px;
+	// padding-right: 18px;
+	// padding-bottom: 24px;
+	// padding-left: 18px;
+	padding-bottom: 14px;
+	padding-left: 9px;
+	padding-right: 10px;
+
+	// width: 220px;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	// border: 1px solid #9b9b9b;
+	max-width: 200px;
+	border-radius: 8px;
+
+	.meta {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&.red {
+		background: linear-gradient(315deg, var(--dark-red), var(--light-red));
+		.ellipsis {
+			background-color: var(--dark-red);
+		}
+	}
+	&.green {
+		background: linear-gradient(
+			315deg,
+			var(--dark-green),
+			var(--light-green)
+		);
+		.ellipsis {
+			background-color: var(--dark-green);
+		}
+	}
+	&.pink {
+		background: linear-gradient(
+			315deg,
+			var(--dark-pink),
+			var(--light-pink)
+		);
+		.ellipsis {
+			background-color: var(--dark-pink);
+		}
+	}
+	&.purple {
+		background: linear-gradient(
+			315deg,
+			var(--dark-purple),
+			var(--light-purple)
+		);
+		.ellipsis {
+			background-color: var(--dark-purple);
+		}
+	}
+	&.yellow {
+		background: linear-gradient(
+			315deg,
+			var(--dark-yellow),
+			var(--light-yellow)
+		);
+		.ellipsis {
+			background-color: var(--dark-yellow);
+		}
+	}
+	&.blue {
+		background: linear-gradient(
+			315deg,
+			var(--dark-blue),
+			var(--light-blue)
+		);
+		.ellipsis {
+			background-color: var(--dark-blue);
+		}
+	}
+	&.empty {
+		background: transparent;
+		border: 2px solid #006fc9;
+		color: #006fc9;
+	}
+}
+.card:hover {
+	border-color: #067df7;
+}
+.card h3 {
+	margin: 0;
+	// color: #067df7;
+	font-size: 18px;
+	font-weight: 500;
+}
+.card p {
+	margin: 0;
+	padding: 12px 0 0;
+	font-size: 13px;
+	// color: #333;
+}
+
+.icon {
+	height: 30px;
+	width: 30px;
+}
+
+.ellipsis {
+	background-color: #389d10;
+	padding: 8px;
+	transform: scale(0.6);
+	clip-path: circle(23px at center);
+}
